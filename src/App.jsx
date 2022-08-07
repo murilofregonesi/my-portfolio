@@ -1,7 +1,7 @@
+import About from "./pages/About";
+
 function App() {
-  return (
-    <h1>Murilo</h1>
-  );
+  return <About />;
 }
 
 export default App;
