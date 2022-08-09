@@ -1,0 +1,18 @@
+{
+    "web_dev": {
+        "title": "Desenvolvimento Web",
+        "description": "Back-end com Python e Flask. Front-end com React."
+    },
+    "database": {
+        "title": "Banco de Dados",
+        "description": "RDB com PostgreSQL."
+    },
+    "creative": {
+        "title": "Profissionalismo",
+        "description": "Liderança, Comunicação, Organização."
+    },
+    "professional": {
+        "title": "Criatividade",
+        "description": "9 Patentes, 5 Publicações."
+    }
+}

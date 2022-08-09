@@ -6,17 +6,14 @@ const BasicsWrapper = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
-
-const Name = styled.span`
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 0.6rem;
+  max-width: 512px;
+  margin: 0 3em;
 `;
 
 const Title = styled.span`
-  font-size: 16px;
-  padding-bottom: 0.4rem;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
 `;
 
 const Local = styled.span`
@@ -26,9 +23,8 @@ const Local = styled.span`
 export function ProfileBasics() {
   return (
     <BasicsWrapper>
-      <Name>{data.name}</Name>
-      <Title>{data.title}</Title>
-      <Local>{data.local}</Local>
+      <Title>Sobre mim</Title>
+      <Local>{data.about}</Local>
     </BasicsWrapper>
   );
 }
