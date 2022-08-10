@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { white_1000, white_800 } from "../../UI/variables";
 
 const SkillWrapper = styled.div`
   display: flex;
@@ -17,11 +18,13 @@ const SkillImg = styled.img`
 const SkillTitle = styled.p`
   font-size: 16px;
   font-weight: bold;
+  color: ${white_1000};
 `;
 
 const SkillDescription = styled.p`
   font-size: 14px;
   margin: 0;
+  color: ${white_800};
 `;
 
 export function Skill({ image, title, description }) {

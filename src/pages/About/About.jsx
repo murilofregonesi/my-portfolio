@@ -8,6 +8,7 @@ import icon_professional from "../../assets/img/icon_professional.svg";
 import icon_web from "../../assets/img/icon_web.svg";
 import Skill from "../../components/Skill";
 import data from "./data.json";
+import { Hero } from "../../components/Hero/Hero";
 
 const HeaderInfo = styled.div`
   display: flex;
@@ -29,8 +30,9 @@ const SkillList = styled.article`
 export function About() {
   return (
     <>
+      <Hero />
       <HeaderInfo>
-        <AvatarImg src={avatar} alt="Avatar" />
+        <AvatarImg src={avatar} alt="Avatar do resumo" />
         <ProfileBasics />
       </HeaderInfo>
       <SkillList>
