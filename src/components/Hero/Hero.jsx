@@ -11,7 +11,7 @@ const HeroBox = styled.article`
   align-items: center;
   background-color: #fdb5c3;
   color: ${black_1000};
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 `;
 
 const HeroAvatar = styled.img`

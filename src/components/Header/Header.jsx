@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { white_800, white_600, black_1000 } from "../../UI/variables";
 
 const HeaderWrapper = styled.nav`
@@ -26,6 +26,11 @@ const HeaderWrapper = styled.nav`
     text-decoration: underline;
     color: ${white_800};
   }
+
+  .active {
+    text-decoration: underline;
+    color: ${white_800};
+  }
 `;
 
 const HeaderMargin = styled.div`
@@ -33,16 +38,26 @@ const HeaderMargin = styled.div`
 `;
 
 export function Header() {
+  const pathname = useLocation().pathname;
+
   return (
     <>
       <HeaderWrapper>
-        <Link className="link" to={"/"}>
+        <Link
+          className={"link" + (pathname === "/" ? " active" : "")}
+          to={"/"}>
           Sobre
         </Link>
-        <Link className="link" to={"/carreira"}>
+        <Link
+          className={"link" + (pathname === "/carreira" ? " active" : "")}
+          to={"/carreira"}
+        >
           Carreira
         </Link>
-        <Link className="link" to={"/projetos"}>
+        <Link
+          className={"link" + (pathname === "/projetos" ? " active" : "")}
+          to={"/projetos"}
+        >
           Projetos
         </Link>
       </HeaderWrapper>

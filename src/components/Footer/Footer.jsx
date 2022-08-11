@@ -16,7 +16,7 @@ const FooterGradient = styled.span`
 `;
 
 const FooterWrapper = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
