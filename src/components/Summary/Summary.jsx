@@ -5,6 +5,7 @@ import avatar from "../../assets/img/avatar.jpeg";
 import { black_200 } from "../../UI/variables";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import icon_link from "../../assets/img/icon_link.svg";
 
 const SummaryWrapper = styled.div`
   display: flex;
@@ -72,6 +73,7 @@ export function Summary() {
           <BtnWrapper>
             <Button
               text={data.button_job}
+              icon={icon_link}
               onClick={() => {
                 navigate("/carreira");
               }}
@@ -80,6 +82,7 @@ export function Summary() {
           <BtnWrapper>
             <Button
               text={data.button_projects}
+              icon={icon_link}
               transparent
               onClick={() => {
                 navigate("/carreira");

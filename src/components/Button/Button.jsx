@@ -8,6 +8,9 @@ import {
 } from "../../UI/variables";
 
 const Btn = styled.button`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border-radius: 4px;
   background-color: ${(props) =>
     props.transparent ? "rgba(0,0,0,0)" : black_600};
@@ -24,10 +27,16 @@ const Btn = styled.button`
   }
 `;
 
-export function Button({ text, onClick, transparent }) {
+const BtnIcon = styled.img`
+  height: 12px;
+  margin-left: 1em;
+`;
+
+export function Button({ text, onClick, icon, transparent }) {
   return (
     <Btn {...(transparent ? { transparent } : {})} onClick={onClick}>
       {text}
+      {icon ? <BtnIcon src={icon} /> : null}
     </Btn>
   );
 }

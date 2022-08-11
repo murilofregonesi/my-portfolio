@@ -12,6 +12,7 @@ const HeaderWrapper = styled.nav`
   border-bottom: 1px solid ${white_800};
   box-shadow: 8px -6px 16px ${white_800};
   background-color: ${black_1000};
+  z-index: 1;
 
   .link {
     font-weight: bold;
@@ -43,9 +44,7 @@ export function Header() {
   return (
     <>
       <HeaderWrapper>
-        <Link
-          className={"link" + (pathname === "/" ? " active" : "")}
-          to={"/"}>
+        <Link className={"link" + (pathname === "/" ? " active" : "")} to={"/"}>
           Sobre
         </Link>
         <Link
