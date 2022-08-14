@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import data from "./data.json";
 import photo from "../../assets/img/workstation.jpg";
-import { black_600, blue_200 } from "../../UI/variables";
+import { blue_200, blue_600 } from "../../UI/variables";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import icon_link from "../../assets/img/icon_link.svg";
@@ -57,8 +57,8 @@ const SummaryAvatar = styled.img`
   max-width: 285px;
   width: auto;
   height: auto;
-  box-shadow: 10px 10px 0px ${blue_200};
-  border: 1px solid ${black_600};
+  box-shadow: 15px 15px 0px -5px ${blue_200};
+  border: 2px solid ${blue_600};
 
   @media (orientation: portrait) {
     width: 202px;
@@ -92,7 +92,7 @@ export function Summary() {
               icon={icon_link}
               transparent
               onClick={() => {
-                navigate("/carreira");
+                navigate("/projetos");
               }}
             />
           </BtnWrapper>

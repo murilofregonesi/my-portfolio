@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { black_1000, black_800, black_600, black_400 } from "../../UI/variables";
+import { black_1000, black_800, black_600, blue_200 } from "../../UI/variables";
 import avatar from "../../assets/img/hero.png";
 import data from "./data.json";
 
@@ -9,7 +9,7 @@ const HeroBox = styled.article`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #6383e3;
+  background-color: ${blue_200};
   color: ${black_1000};
   margin-bottom: 5em;
 `;

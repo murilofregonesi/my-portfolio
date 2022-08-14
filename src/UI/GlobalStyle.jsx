@@ -7,4 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     color: ${white_1000};
     background-color: ${black_1000};
   }
+
+  #root {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
 `;

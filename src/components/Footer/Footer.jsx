@@ -7,6 +7,7 @@ import icon_linkedin from "../../assets/img/icon_linkedin.svg";
 const FooterGradient = styled.span`
   display: flex;
   justify-content: center;
+  margin-top: auto;
   background: linear-gradient(
     0deg,
     rgb(255, 255, 255, 0.1),

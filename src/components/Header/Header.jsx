@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
-import { white_800, white_600, black_1000 } from "../../UI/variables";
+import {
+  white_800,
+  white_1000,
+  white_600,
+  black_1000,
+} from "../../UI/variables";
 
 const HeaderWrapper = styled.nav`
   display: flex;
@@ -25,12 +30,12 @@ const HeaderWrapper = styled.nav`
 
   .link:hover {
     text-decoration: underline;
-    color: ${white_800};
+    color: ${white_1000};
   }
 
   .active {
     text-decoration: underline;
-    color: ${white_800};
+    color: ${white_1000};
   }
 `;
 
