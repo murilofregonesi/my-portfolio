@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import data from "./data.json";
-import avatar from "../../assets/img/avatar.jpeg";
-import { black_200 } from "../../UI/variables";
+import photo from "../../assets/img/workstation.jpg";
+import { black_600, blue_200 } from "../../UI/variables";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import icon_link from "../../assets/img/icon_link.svg";
@@ -14,6 +14,9 @@ const SummaryWrapper = styled.div`
 
   @media (orientation: portrait) {
     flex-direction: column;
+    margin: 0 0 3em 0;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -38,6 +41,10 @@ const SummaryContent = styled.span`
 const BtnList = styled.span`
   margin-top: 2em;
   display: flex;
+
+  @media (orientation: portrait) {
+    display: none;
+  }
 `;
 
 const BtnWrapper = styled.span`
@@ -46,17 +53,18 @@ const BtnWrapper = styled.span`
 
 const SummaryAvatar = styled.img`
   border-radius: 12px;
-  height: 256px;
-`;
+  max-height: 320px;
+  max-width: 285px;
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px 0px ${blue_200};
+  border: 1px solid ${black_600};
 
-const AvatarShadow = styled.span`
-  height: 256px;
-  width: 256px;
-  background-color: ${black_200};
-  border-radius: 12px;
-  position: absolute;
-  translate: 16px 16px;
-  z-index: -1;
+  @media (orientation: portrait) {
+    width: 202px;
+    height: 226px;
+    margin-bottom: 3em;
+  }
 `;
 
 export function Summary() {
@@ -64,8 +72,7 @@ export function Summary() {
 
   return (
     <SummaryWrapper>
-      <SummaryAvatar src={avatar} alt="Avatar do resumo" />
-      <AvatarShadow />
+      <SummaryAvatar src={photo} alt="Avatar do resumo" />
       <SummaryInfo>
         <SummaryTitle>Sobre mim</SummaryTitle>
         <SummaryContent>{data.about}</SummaryContent>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { black_1000 } from "../../UI/variables";
-import avatar from "../../assets/img/avatar.jpeg";
+import { black_1000, black_800, black_600, black_400 } from "../../UI/variables";
+import avatar from "../../assets/img/hero.png";
 import data from "./data.json";
 
 const HeroBox = styled.article`
@@ -9,40 +9,60 @@ const HeroBox = styled.article`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fdb5c3;
+  background-color: #6383e3;
   color: ${black_1000};
   margin-bottom: 5em;
 `;
 
 const HeroAvatar = styled.img`
-  height: 256px;
+  height: 360px;
+  padding: 2em 0;
+
+  @media (orientation: portrait) {
+    height: 200px;
+  }
 `;
 
 const HeroInfo = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (orientation: portrait) {
+    max-width: 164px;
+  }
 `;
 
 const HeroInfoHello = styled.p`
   color: ${black_1000};
   font-size: 16px;
   margin-bottom: 1em;
+  padding-left: 16px;
+
+  @media (orientation: portrait) {
+    font-size: 12px;
+  }
 `;
 
 const HeroInfoName = styled.p`
-  color: ${black_1000};
+  color: ${black_800};
   font-weight: bold;
-  font-size: 32px;
+  font-size: 42px;
   margin: 0;
-  padding-left: 16px;
+
+  @media (orientation: portrait) {
+    font-size: 18px;
+  }
 `;
 
 const HeroInfoPosition = styled.p`
-  color: ${black_1000};
+  color: ${black_600};
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 0.5em;
-  padding-left: 16px;
+
+  @media (orientation: portrait) {
+    font-size: 12px;
+  }
 `;
 
 export function Hero() {

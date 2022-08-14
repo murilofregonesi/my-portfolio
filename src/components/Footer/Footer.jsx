@@ -12,7 +12,6 @@ const FooterGradient = styled.span`
     rgb(255, 255, 255, 0.1),
     ${black_1000} 100%
   );
-  width: 100vw;
 `;
 
 const FooterWrapper = styled.div`

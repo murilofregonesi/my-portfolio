@@ -9,3 +9,9 @@ export const black_800 = "#000021";
 export const black_600 = "#000032";
 export const black_400 = "#000047";
 export const black_200 = "#00005b";
+
+export const blue_1000 = "#00001B";
+export const blue_800 = "#000029";
+export const blue_600 = "#000048";
+export const blue_400 = "#000081";
+export const blue_200 = "#0000BC";

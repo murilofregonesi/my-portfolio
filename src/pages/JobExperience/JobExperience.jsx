@@ -1,15 +1,9 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import { Button } from "../../components/Button/Button";
 import logo_sensedata from "../../assets/img/logo_sensedata.svg";
 import logo_schaeffler from "../../assets/img/logo_schaeffler.svg";
 import logo_aiesec from "../../assets/img/logo_aiesec.svg";
-import {
-  black_200,
-  black_600,
-  black_800,
-  black_1000,
-} from "../../UI/variables";
+import { black_800, blue_200, black_1000, blue_800 } from "../../UI/variables";
 import styled from "styled-components";
 import data from "./data.json";
 
@@ -24,22 +18,39 @@ const ExpHeaderInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (orientation: portrait) {
+    max-width: 150px;
+  }
 `;
 
 const ExpHeaderLogo = styled.img`
   height: 64px;
   width: 160px;
   margin-right: 2em;
+
+  @media (orientation: portrait) {
+    height: 48px;
+    width: 120px;
+  }
 `;
 
 const ExpHeaderTitle = styled.span`
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 0.5em;
+
+  @media (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 
 const ExpHeaderPeriod = styled.span`
   font-size: 14px;
+
+  @media (orientation: portrait) {
+    font-size: 12px;
+  }
 `;
 
 const ExpBody = styled.div`
@@ -62,10 +73,11 @@ const ExpBodyTitle = styled.span`
 `;
 
 const Highlight = styled.div`
-  background-color: ${black_600};
+  background-color: ${blue_800};
   width: 70%;
   align-self: center;
-  border: solid 1px ${black_200};
+  border: solid 1px ${blue_200};
+  box-shadow: 8px 8px 5px black;
   border-radius: 12px;
   padding: 1em 1em 0 1em;
   margin-top: 1em;
@@ -81,6 +93,7 @@ export function JobExperience() {
   return (
     <ReactFullpage
       scrollingSpeed={1000}
+      navigation={true}
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
@@ -115,11 +128,6 @@ export function JobExperience() {
                       dangerouslySetInnerHTML={{ __html: data[i].hilights }}
                     />
                   </Highlight>
-                  <Button
-                    text={"Próximo"}
-                    transparent
-                    onClick={() => fullpageApi.moveSectionDown()}
-                  />
                 </div>
               );
             })}

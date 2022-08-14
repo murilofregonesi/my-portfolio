@@ -9,6 +9,10 @@ const SkillWrapper = styled.div`
   margin: 1em 4em;
   max-width: 220px;
   text-align: center;
+
+  @media (orientation: portrait) {
+    margin: 1em 2em;
+  }
 `;
 
 const SkillImg = styled.img`
