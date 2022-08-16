@@ -15,3 +15,9 @@ export const blue_800 = "#000029";
 export const blue_600 = "#000048";
 export const blue_400 = "#000081";
 export const blue_200 = "#0000BC";
+
+export const orange_1000 = "#ff7400";
+export const orange_800 = "fc9036";
+export const orange_600 = "#ffaa54";
+export const orange_400 = "ffbe7d";
+export const orange_200 = "#e5e5e5";
