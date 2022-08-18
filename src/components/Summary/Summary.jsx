@@ -28,10 +28,9 @@ const SummaryInfo = styled.article`
   margin: 0 4.5em;
 `;
 
-const SummaryTitle = styled.span`
+const SummaryTitle = styled.h2`
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 0.6rem;
 `;
 
 const SummaryContent = styled.span`

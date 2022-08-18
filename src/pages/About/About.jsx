@@ -13,6 +13,11 @@ const SkillList = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  @media (orientation: portrait) {
+    max-width: 80%;
+    align-self: center;
+  }
 `;
 
 export function About() {

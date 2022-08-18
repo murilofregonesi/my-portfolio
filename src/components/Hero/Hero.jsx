@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  black_1000,
-  orange_600,
-  orange_1000,
   orange_200,
+  blue_600,
+  blue_200,
 } from "../../UI/variables";
 import avatar from "../../assets/img/hero.png";
 import data from "./data.json";
@@ -15,12 +14,11 @@ const HeroBox = styled.article`
   justify-content: space-evenly;
   align-items: center;
   background-color: ${orange_200};
-  color: ${black_1000};
   margin-bottom: 5em;
 `;
 
 const HeroAvatar = styled.img`
-  height: 280px;
+  height: 300px;
   padding: 2em 0 3em 0;
 
   @media (orientation: portrait) {
@@ -35,8 +33,8 @@ const HeroInfo = styled.div`
   text-align: center;
 `;
 
-const HeroInfoTitle = styled.p`
-  color: ${orange_1000};
+const HeroInfoTitle = styled.h1`
+  color: ${blue_200};
   font-weight: bold;
   font-size: 42px;
   margin: 0;
@@ -49,7 +47,7 @@ const HeroInfoTitle = styled.p`
 `;
 
 const HeroInfoSubtitle = styled.p`
-  color: ${orange_600};
+  color: ${blue_600};
   font-weight: bold;
   font-size: 20px;
   margin-top: 1.5em;
