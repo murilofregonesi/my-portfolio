@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -7,6 +7,8 @@ import {
   white_600,
   black_1000,
 } from "../../UI/variables";
+import LanguageSelector from "../LanguageSelector";
+import { LanguageContext } from "../../contexts/LanguageProvider/LanguageProvider";
 
 const HeaderWrapper = styled.nav`
   display: flex;
@@ -18,6 +20,13 @@ const HeaderWrapper = styled.nav`
   box-shadow: 8px -6px 16px ${white_800};
   background-color: ${black_1000};
   z-index: 1;
+  align-items: center;
+  padding: 0.4em 0;
+`;
+
+const HeaderContent = styled.span`
+  flex-grow: 1;
+  text-align: center;
 
   .link {
     font-weight: bold;
@@ -45,25 +54,33 @@ const HeaderMargin = styled.div`
 
 export function Header() {
   const pathname = useLocation().pathname;
+  const langDict = useContext(LanguageContext);
+  console.log(langDict.language);
 
   return (
     <>
       <HeaderWrapper>
-        <Link className={"link" + (pathname === "/" ? " active" : "")} to={"/"}>
-          Sobre
-        </Link>
-        <Link
-          className={"link" + (pathname === "/carreira" ? " active" : "")}
-          to={"/carreira"}
-        >
-          Carreira
-        </Link>
-        <Link
-          className={"link" + (pathname === "/projetos" ? " active" : "")}
-          to={"/projetos"}
-        >
-          Projetos
-        </Link>
+        <HeaderContent>
+          <Link
+            className={"link" + (pathname === "/" ? " active" : "")}
+            to={"/"}
+          >
+            Sobre
+          </Link>
+          <Link
+            className={"link" + (pathname === "/carreira" ? " active" : "")}
+            to={"/carreira"}
+          >
+            Carreira
+          </Link>
+          <Link
+            className={"link" + (pathname === "/projetos" ? " active" : "")}
+            to={"/projetos"}
+          >
+            Projetos
+          </Link>
+        </HeaderContent>
+        <LanguageSelector />
       </HeaderWrapper>
       <HeaderMargin />
     </>

@@ -5,10 +5,11 @@ import Projects from "./pages/Projects";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import LanguageProvider from "./contexts/LanguageProvider";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Header />
       <Routes>
         <Route path="/" element={<About />} />
@@ -17,7 +18,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
-    </>
+    </LanguageProvider>
   );
 }
 
