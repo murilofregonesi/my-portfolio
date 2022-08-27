@@ -1,18 +1,34 @@
 {
-    "web_dev": {
-        "title": "Desenvolvimento Web",
-        "description": "Back-end com Python e Flask. Front-end com React."
+    "web_dev_title": {
+        "pt": "Desenvolvimento Web",
+        "en": "Web Development"
     },
-    "database": {
-        "title": "Banco de Dados",
-        "description": "RDB com PostgreSQL."
+    "web_dev_description": {
+        "pt": "Back-end com Python e Flask. Front-end com React.",
+        "en": "Back-end with Python and Flask. Front-end with React."
     },
-    "creative": {
-        "title": "Profissionalismo",
-        "description": "Liderança, Comunicação, Organização."
+    "database_title": {
+        "pt": "Banco de Dados",
+        "en": "Database"
     },
-    "professional": {
-        "title": "Criatividade",
-        "description": "9 Patentes, 5 Publicações."
+    "database_description": {
+        "pt": "RDB com PostgreSQL.",
+        "en": "RDB with PostgreSQL."
+    },
+    "creative_title": {
+        "pt": "Profissionalismo",
+        "en": "Professionalism"
+    },
+    "creative_description": {
+        "pt": "Liderança, Comunicação, Organização.",
+        "en": "Leadership, Communication, Organization."
+    },
+    "professional_title": {
+        "pt": "Criatividade",
+        "en": "Creativity"
+    },
+    "professional_description": {
+        "pt": "9 Patentes, 5 Publicações.",
+        "en": "9 Patents, 5 Publications."
     }
 }

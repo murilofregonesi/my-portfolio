@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -8,7 +8,8 @@ import {
   black_1000,
 } from "../../UI/variables";
 import LanguageSelector from "../LanguageSelector";
-import { LanguageContext } from "../../contexts/LanguageProvider/LanguageProvider";
+import jsonData from "./data.json";
+import Translate from "../../UI/Translate";
 
 const HeaderWrapper = styled.nav`
   display: flex;
@@ -54,8 +55,6 @@ const HeaderMargin = styled.div`
 
 export function Header() {
   const pathname = useLocation().pathname;
-  const langDict = useContext(LanguageContext);
-  console.log(langDict.language);
 
   return (
     <>
@@ -65,19 +64,13 @@ export function Header() {
             className={"link" + (pathname === "/" ? " active" : "")}
             to={"/"}
           >
-            Sobre
+            { Translate(jsonData, "about") }
           </Link>
           <Link
             className={"link" + (pathname === "/carreira" ? " active" : "")}
             to={"/carreira"}
           >
-            Carreira
-          </Link>
-          <Link
-            className={"link" + (pathname === "/projetos" ? " active" : "")}
-            to={"/projetos"}
-          >
-            Projetos
+            { Translate(jsonData, "career") }
           </Link>
         </HeaderContent>
         <LanguageSelector />

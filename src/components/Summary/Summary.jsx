@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import data from "./data.json";
+import dataJson from "./data.json";
 import photo from "../../assets/img/workstation.jpg";
 import { blue_200, blue_600 } from "../../UI/variables";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import icon_link from "../../assets/img/icon_link.svg";
+import Translate from "../../UI/Translate";
 
 const SummaryWrapper = styled.div`
   display: flex;
@@ -73,28 +74,28 @@ export function Summary() {
     <SummaryWrapper>
       <SummaryAvatar src={photo} alt="Avatar do resumo" />
       <SummaryInfo>
-        <SummaryTitle>Sobre mim</SummaryTitle>
-        <SummaryContent>{data.about}</SummaryContent>
+        <SummaryTitle>{Translate(dataJson, "about_title")}</SummaryTitle>
+        <SummaryContent>{Translate(dataJson, "about")}</SummaryContent>
         <BtnList>
           <BtnWrapper>
             <Button
-              text={data.button_job}
+              text={Translate(dataJson, "button_job")}
               icon={icon_link}
               onClick={() => {
                 navigate("/carreira");
               }}
             />
           </BtnWrapper>
-          <BtnWrapper>
+          {/* <BtnWrapper>
             <Button
-              text={data.button_projects}
+              text={Translate(dataJson, "button_projects")}
               icon={icon_link}
               transparent
               onClick={() => {
                 navigate("/projetos");
               }}
             />
-          </BtnWrapper>
+          </BtnWrapper> */}
         </BtnList>
       </SummaryInfo>
     </SummaryWrapper>

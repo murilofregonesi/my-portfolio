@@ -1,4 +1,10 @@
 {
-    "title": "Desenvolvedor Python & Squad Leader",
-    "subtitle": "Desenvolvedor e Engenheiro, crio código de forma criativa, eficiente e profissional"
+    "title": {
+        "pt": "Desenvolvedor Python & Squad Leader",
+        "en": "Python Developer & Squad Leader"
+    },
+    "subtitle": {
+        "pt": "Desenvolvedor e Engenheiro, crio código de forma criativa, eficiente e profissional",
+        "en": "Developer and Engineer, I create code creatively, efficiently and professionally"
+    }
 }

@@ -1,5 +1,14 @@
 {
-    "about": "iausdh aioshd aiosudh asihd asud uais duipash diaush diuash iuaps haiush asiuh duisah iausdh aioshd aiosudh asihd asud uais duipash diaush diuash iuaps haiush asiuh duisahiausdh aioshd aiosudh asihd asud uais duipash diaush diuash iuaps haiush asiuh duisah",
-    "button_job": "Minha Trajetória",
-    "button_projects": "Meus Projetos"
+    "about_title": {
+        "pt": "Sobre mim",
+        "en": "About me"
+    },
+    "about": {
+        "pt": "iausdh aioshd aiosudh asihd asud uais duipash diaush diuash iuaps haiush asiuh duisah iausdh aioshd aiosudh asihd asud uais duipash diaush diuash iuaps haiush asiuh duisahiausdh aioshd aiosudh asihd asud uais duipash diaush diuash iuaps haiush asiuh duisah",
+        "en": "eeeeeeeeeeeeeeeeee"
+    },
+    "button_job": {
+        "pt": "Minha Trajetória",
+        "en": "My Trajectory"
+    }
 }

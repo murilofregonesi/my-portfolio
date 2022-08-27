@@ -6,7 +6,8 @@ import icon_database from "../../assets/img/icon_database.svg";
 import icon_professional from "../../assets/img/icon_professional.svg";
 import icon_web from "../../assets/img/icon_web.svg";
 import Skill from "../../components/Skill";
-import data from "./data.json";
+import jsonData from "./data.json";
+import Translate from "../../UI/Translate";
 import { Hero } from "../../components/Hero/Hero";
 
 const SkillList = styled.article`
@@ -28,25 +29,25 @@ export function About() {
       <SkillList>
         <Skill
           image={icon_web}
-          title={data.web_dev.title}
-          description={data.web_dev.description}
+          title={Translate(jsonData, "web_dev_title")}
+          description={Translate(jsonData, "web_dev_description")}
         />
         <Skill
           image={icon_database}
-          title={data.database.title}
-          description={data.database.description}
+          title={Translate(jsonData, "database_title")}
+          description={Translate(jsonData, "database_description")}
         />
       </SkillList>
       <SkillList>
         <Skill
           image={icon_creative}
-          title={data.creative.title}
-          description={data.creative.description}
+          title={Translate(jsonData, "creative_title")}
+          description={Translate(jsonData, "creative_description")}
         />
         <Skill
           image={icon_professional}
-          title={data.professional.title}
-          description={data.professional.description}
+          title={Translate(jsonData, "professional_title")}
+          description={Translate(jsonData, "professional_description")}
         />
       </SkillList>
     </>

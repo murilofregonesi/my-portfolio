@@ -1,23 +1,68 @@
 [
   {
-    "title": "Desenvolvedor Python | Squad Leader",
-    "period": "Jan/2021 - Presente",
-    "summary": "asdasda sdasdas asd asd asd asd  asdasdasdas dasdasdasd as asd asd asd asdsadasd asdasdas asdasdasdasdas asdasdasdasdas asd asd asd asd  asdasdasdas dasdasdasd as asd asd asd asdsadasd asdasdas asdasd asdasdas asdasdas dasdas asd asd asd asd  asdasdasda sdasdasdasd as asd asd asd asdsadasdasdasdas asdasdasdasdas",
-    "achievements": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
-    "hilights": "asdasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>"
+    "title": {
+      "pt": "Desenvolvedor Python | Squad Leader",
+      "en": "eee"
+    },
+    "period": {
+      "pt": "Jan/2021 - Presente",
+      "en": "eee"
+    },
+    "summary": {
+      "pt": "a",
+      "en": "eee"
+    },
+    "achievements": {
+      "pt": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
+      "en": "eee"
+    },
+    "hilights": {
+      "pt": "as: dasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>",
+      "en": "eee"
+    }
   },
   {
-    "title": "Engenheiro de Produto",
-    "period": "Jan/2021 - Presente",
-    "summary": "asdasda sdasdas asd asd asd asd  asdasdasdasdas dasdasd as asd asd asd asdsadasd asdasdas asdasdasdasdas asdasdasdasdas asd asd asd asd  asdasdasdasd asdasdasd as asd asd asd asdsadasd asdasdas asdasdasdasdas asdasdasdasdas asd asd asd asd  asdasdasdasdasdasdasd as asd asd asd asdsadasdasdasdas asdasdasdasdas",
-    "achievements": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
-    "hilights": "asdasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>"
+    "title": {
+      "pt": "Engenheiro de Produto",
+      "en": "eee"
+    },
+    "period": {
+      "pt": "Jan/2021 - Presente",
+      "en": "eee"
+    },
+    "summary": {
+      "pt": "as",
+      "en": "eee"
+    },
+    "achievements": {
+      "pt": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
+      "en": "eee"
+    },
+    "hilights": {
+      "pt": "as: dasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>",
+      "en": "eee"
+    }
   },
   {
-    "title": "experiencia",
-    "period": "Jan/2021 - Presente",
-    "summary": "asdasda sdasdas asd asd asd asd  asdasdasdas dasdasdasd as asd asd asd asdsadasd asdasdas asdasdasdasdas asdasdasdasdas asd asd asd asd  asdasdasda sdasdasdasd as asd asd asd asdsadasda sdasdas asdasdasdasdas asdasdasdasdas asd asd asd asd  asdasdasdasdasdasdasd as asd asd asd asdsadasdasdasdas asdasdasdasdas",
-    "achievements": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
-    "hilights": "asdasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>"
+    "title": {
+      "pt": "experiencia",
+      "en": "eee"
+    },
+    "period": {
+      "pt": "Jan/2021 - Presente",
+      "en": "eee"
+    },
+    "summary": {
+      "pt": "asdasdasdas",
+      "en": "eee"
+    },
+    "achievements": {
+      "pt": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
+      "en": "eee"
+    },
+    "hilights": {
+      "pt": "as: dasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>",
+      "en": "eee"
+    }
   }
 ]

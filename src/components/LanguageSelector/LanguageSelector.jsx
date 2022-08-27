@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../../contexts/LanguageProvider/LanguageProvider";
 
 const SwitchWrapper = styled(Switch)(() => ({
+  marginRight: "1em",
   width: 62,
   height: 34,
   padding: 7,

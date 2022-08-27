@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import logo_sensedata from "../../assets/img/logo_sensedata.svg";
 import logo_schaeffler from "../../assets/img/logo_schaeffler.svg";
 import logo_aiesec from "../../assets/img/logo_aiesec.svg";
 import { black_800, blue_200, black_1000, blue_800 } from "../../UI/variables";
 import styled from "styled-components";
-import data from "./data.json";
+import jsonData from "./data.json";
+import { LanguageContext } from "../../contexts/LanguageProvider/LanguageProvider";
 
 const ExpHeader = styled.div`
   display: flex;
@@ -90,6 +91,8 @@ const Highlight = styled.div`
 const logos = [logo_sensedata, logo_schaeffler, logo_aiesec];
 
 export function JobExperience() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <ReactFullpage
       scrollingSpeed={1000}
@@ -109,23 +112,37 @@ export function JobExperience() {
                   <ExpHeader>
                     <ExpHeaderLogo src={logo} />
                     <ExpHeaderInfo>
-                      <ExpHeaderTitle>{data[i].title}</ExpHeaderTitle>
-                      <ExpHeaderPeriod>{data[i].period}</ExpHeaderPeriod>
+                      <ExpHeaderTitle>
+                        {jsonData[i].title[language]}
+                      </ExpHeaderTitle>
+                      <ExpHeaderPeriod>
+                        {jsonData[i].period[language]}
+                      </ExpHeaderPeriod>
                     </ExpHeaderInfo>
                   </ExpHeader>
                   <ExpBody>
                     <ExpBodyText
-                      dangerouslySetInnerHTML={{ __html: data[i].summary }}
+                      dangerouslySetInnerHTML={{
+                        __html: jsonData[i].summary[language],
+                      }}
                     />
-                    <ExpBodyTitle>Conquistas</ExpBodyTitle>
+                    <ExpBodyTitle>
+                      {language === "pt" ? "Conquistas" : "Achievements"}
+                    </ExpBodyTitle>
                     <ExpBodyText
-                      dangerouslySetInnerHTML={{ __html: data[i].achievements }}
+                      dangerouslySetInnerHTML={{
+                        __html: jsonData[i].achievements[language],
+                      }}
                     />
                   </ExpBody>
                   <Highlight>
-                    <ExpBodyTitle>Diferencial</ExpBodyTitle>
+                    <ExpBodyTitle>
+                      {language === "pt" ? "Diferencial" : "Hilights"}
+                    </ExpBodyTitle>
                     <ExpBodyText
-                      dangerouslySetInnerHTML={{ __html: data[i].hilights }}
+                      dangerouslySetInnerHTML={{
+                        __html: jsonData[i].hilights[language],
+                      }}
                     />
                   </Highlight>
                 </div>

@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  orange_200,
-  blue_600,
-  blue_200,
-} from "../../UI/variables";
+import { orange_200, blue_600, blue_200 } from "../../UI/variables";
 import avatar from "../../assets/img/hero.png";
-import data from "./data.json";
+import dataJson from "./data.json";
+import Translate from "../../UI/Translate";
 
 const HeroBox = styled.article`
   display: flex;
@@ -36,13 +33,13 @@ const HeroInfo = styled.div`
 const HeroInfoTitle = styled.h1`
   color: ${blue_200};
   font-weight: bold;
-  font-size: 42px;
+  font-size: 48px;
   margin: 0;
   padding-top: 2em;
 
   @media (orientation: portrait) {
-    font-size: 24px;
-    max-width: 70%;
+    font-size: 30px;
+    max-width: 90%;
   }
 `;
 
@@ -55,7 +52,7 @@ const HeroInfoSubtitle = styled.p`
   @media (orientation: portrait) {
     font-size: 12px;
     text-align: center;
-    max-width: 90%;
+    max-width: 80%;
   }
 `;
 
@@ -63,8 +60,8 @@ export function Hero() {
   return (
     <HeroBox>
       <HeroInfo>
-        <HeroInfoTitle>{data.title}</HeroInfoTitle>
-        <HeroInfoSubtitle>{data.subtitle}</HeroInfoSubtitle>
+        <HeroInfoTitle>{Translate(dataJson, "title")}</HeroInfoTitle>
+        <HeroInfoSubtitle>{Translate(dataJson, "subtitle")}</HeroInfoSubtitle>
       </HeroInfo>
       <HeroAvatar src={avatar} alt="Avatar do Hero" />
     </HeroBox>
