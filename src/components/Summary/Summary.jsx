@@ -34,7 +34,7 @@ const SummaryTitle = styled.h2`
   font-weight: bold;
 `;
 
-const SummaryContent = styled.span`
+const SummaryContent = styled.p`
   font-size: 14px;
 `;
 
@@ -75,7 +75,11 @@ export function Summary() {
       <SummaryAvatar src={photo} alt="Avatar do resumo" />
       <SummaryInfo>
         <SummaryTitle>{Translate(dataJson, "about_title")}</SummaryTitle>
-        <SummaryContent>{Translate(dataJson, "about")}</SummaryContent>
+        <SummaryContent
+          dangerouslySetInnerHTML={{
+            __html: Translate(dataJson, "about"),
+          }}
+        />
         <BtnList>
           <BtnWrapper>
             <Button

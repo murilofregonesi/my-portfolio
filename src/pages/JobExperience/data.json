@@ -1,68 +1,68 @@
 [
   {
     "title": {
-      "pt": "Desenvolvedor Python | Squad Leader",
-      "en": "eee"
+      "pt": "Desenvolvedor Python & Squad Leader",
+      "en": "Python Developer & Squad Leader"
     },
     "period": {
-      "pt": "Jan/2021 - Presente",
-      "en": "eee"
+      "pt": "Jan 2021 - Presente",
+      "en": "Jan 2021 - Present"
     },
     "summary": {
-      "pt": "a",
-      "en": "eee"
+      "pt": "Desenvolvedor back-end com Python e Líder de Squad dentro do time de evolução do produto.",
+      "en": "Back-end developer with Python and Squad Leader within the product evolution team."
     },
     "achievements": {
-      "pt": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
-      "en": "eee"
+      "pt": "&bull; Metodologia Agile - Scrum.<br />&bull; Desenvolvimento features em Python e React.<br />&bull; Desenvolvimento micro-serviços com Python.<br />&bull; Banco de dados PostgreSQL.<br />&bull; Ambientes de desenvolvimento com Docker.",
+      "en": "&bull; Agile Methodology - Scrum.<br />&bull; Development of features in Python and React.<br />&bull; Microservices development with Python.<br />&bull; PostgreSQL database.<br />&bull; Development environments with Docker."
     },
     "hilights": {
-      "pt": "as: dasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>",
-      "en": "eee"
+      "pt": "Primeira experiência profissional como desenvolvedor, me tornando Squad Leader em menos de dois anos.<br />Resultado de muita dedicação, cooperação com o time e capacidade de adaptação e aprendizado.",
+      "en": "First professional experience as a developer, becoming Squad Leader in less than two years.<br />Result of a lot of dedication, cooperation with the team and ability to adapt and learn."
     }
   },
   {
     "title": {
       "pt": "Engenheiro de Produto",
-      "en": "eee"
+      "en": "Product Engineer"
     },
     "period": {
-      "pt": "Jan/2021 - Presente",
-      "en": "eee"
+      "pt": "Ago 2012 - Jan 2021",
+      "en": "Aug 2012 - Jan 2021"
     },
     "summary": {
-      "pt": "as",
-      "en": "eee"
+      "pt": "Engenheiro nos times de Desenvolvimento Avançado e Validação e Verificação de modelos.",
+      "en": "Engineer in the Advanced Development and Model Validation and Verification teams."
     },
     "achievements": {
-      "pt": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
-      "en": "eee"
+      "pt": "&bull; Modelagem e simulação com foco em eficiência energética (MATLAB, Simulink).<br />&bull;&nbsp;Gestão de projetos de Roadmap e do time.<br />&bull; Instrumentação veicular.<br />&bull; Realização e Análise de experimentos veiculares e de bancada.<br />&bull; Projeto e implementação de sistemas embarcados automotivos.",
+      "en": "&bull; Modeling and simulation with a focus on energy efficiency (MATLAB, Simulink).<br />&bull;&nbsp;Management of Roadmap and Team projects.<br />&bull; Vehicular instrumentation.<br />&bull; Realization and Analysis of vehicular and test bench experiments.<br />&bull; Design and implementation of automotive embedded systems."
     },
     "hilights": {
-      "pt": "as: dasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>",
-      "en": "eee"
+      "pt": "Aqui assumi diversas responsabilidades e evoluí de estagiário à engenheiro de desenvolvimento avançado e gerente de projeto Roadmap.<br />Neste período cursei meu mestrado e desenvolvi diversas aplicações como estudante de programação.",
+      "en": "Here I took on several responsibilities, evolving from intern to advanced development engineer and Roadmap project manager.<br />During this period I attended my master's degree and developed several applications as a programming student."
     }
   },
   {
     "title": {
-      "pt": "experiencia",
-      "en": "eee"
+      "pt": "Membro do grupo de Intercâmbios não corporativos",
+      "en": "Incoming Exchange Non-Corporate member"
     },
     "period": {
-      "pt": "Jan/2021 - Presente",
-      "en": "eee"
+      "pt": "Dez 2010 - Out 2011",
+      "en": "Dec 2010 - Oct 2011"
     },
     "summary": {
-      "pt": "asdasdasdas",
-      "en": "eee"
+      "pt": "Seleção e acompanhamento de intercambistas participantes em projetos sociais em Sorocaba.<br />",
+      "en": "Selection and monitoring of exchange students participating in social projects in Sorocaba.<br />"
     },
     "achievements": {
-      "pt": "<ul><li>asdasdasds</li><li>asdasdasds</li><li>asdasdasds</li></ul>",
-      "en": "eee"
+      "pt": "&bull; Experiência completa AIESEC: Cargo de Liderança e intercâmbio voluntário.<br />&bull; Cargo de liderança local no projeto EduAction, coordenando equipe de intercambistas.<br />&bull; Trabalho voluntário como professor de informática para crianças e adultos na Bolívia.",
+      "en": "&bull; Achievement of the complete AIESEC experience: Leadership and volunteer work.<br />&bull; Local leadership role on EduAction project, managing a team of exchange students.<br />&bull; Volunteer work as a computer teacher for children and adults in Bolivia."
     },
     "hilights": {
-      "pt": "as: dasdasd asd asd asd <ul><li>asdasdasds</li><li>asdasdasds</li></ul>",
-      "en": "eee"
+      "pt": "A AIESEC foi uma escola muito importante para mim, sendo meu primeiro contato com diversos elementos: as responsabilidades profissionais e sociais, a cooperação e liderança, culturas e países.<br />Estas experiências estarão sempre comigo, seja como pessoa ou profissional.",
+      "en": "AIESEC was a very important school for me, being my first contact with several elements: professional and social responsibilities, cooperation and leadership, cultures and countries.<br />These experiences will always be with me, whether as a person or as a professional."
     }
   }
 ]

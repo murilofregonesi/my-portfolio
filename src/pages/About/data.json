@@ -4,31 +4,31 @@
         "en": "Web Development"
     },
     "web_dev_description": {
-        "pt": "Back-end com Python e Flask. Front-end com React.",
-        "en": "Back-end with Python and Flask. Front-end with React."
+        "pt": "Back-end: Python, Flask.<br />Front-end: React, JS, HTML, CSS.<br />Base de Docker, AWS.",
+        "en": "Back-end: Python, Flask.<br />Front-end: React, JS, HTML, CSS.<br />Basic Docker, AWS."
     },
     "database_title": {
         "pt": "Banco de Dados",
         "en": "Database"
     },
     "database_description": {
-        "pt": "RDB com PostgreSQL.",
-        "en": "RDB with PostgreSQL."
+        "pt": "RDB PostgreSQL.<br />ORM SQLAlchemy.<br />NoSQL base de MongoDB.",
+        "en": "RDB PostgreSQL.<br />ORM SQLAlchemy.<br />NoSQL MongoDB basic."
     },
     "creative_title": {
-        "pt": "Profissionalismo",
-        "en": "Professionalism"
+        "pt": "Soft Skills",
+        "en": "Soft Skills"
     },
     "creative_description": {
-        "pt": "Liderança, Comunicação, Organização.",
-        "en": "Leadership, Communication, Organization."
+        "pt": "Liderança, Profissionalismo.<br />Comunicação, Organização.",
+        "en": "Leadership, Professionalism.<br />Communication, Organization."
     },
     "professional_title": {
         "pt": "Criatividade",
         "en": "Creativity"
     },
     "professional_description": {
-        "pt": "9 Patentes, 5 Publicações.",
-        "en": "9 Patents, 5 Publications."
+        "pt": "9 Patentes aceitas.<br />5 Publicações relevantes.",
+        "en": "9 Patents accepted.<br />5 Relevant publications."
     }
 }

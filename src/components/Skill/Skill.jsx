@@ -7,7 +7,7 @@ const SkillWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 1em 4em;
-  max-width: 220px;
+  max-width: 256px;
   text-align: center;
   flex-shrink: 1;
   flex-grow: 1;
@@ -38,7 +38,11 @@ export function Skill({ image, title, description }) {
     <SkillWrapper>
       <SkillImg src={image} />
       <SkillTitle>{title}</SkillTitle>
-      <SkillDescription>{description}</SkillDescription>
+      <SkillDescription
+        dangerouslySetInnerHTML={{
+          __html: description,
+        }}
+      />
     </SkillWrapper>
   );
 }

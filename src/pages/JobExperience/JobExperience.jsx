@@ -3,7 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import logo_sensedata from "../../assets/img/logo_sensedata.svg";
 import logo_schaeffler from "../../assets/img/logo_schaeffler.svg";
 import logo_aiesec from "../../assets/img/logo_aiesec.svg";
-import { black_800, blue_200, black_1000, blue_800 } from "../../UI/variables";
+import { black_800, blue_200, black_1000, blue_800, white_800 } from "../../UI/variables";
 import styled from "styled-components";
 import jsonData from "./data.json";
 import { LanguageContext } from "../../contexts/LanguageProvider/LanguageProvider";
@@ -37,12 +37,12 @@ const ExpHeaderLogo = styled.img`
 `;
 
 const ExpHeaderTitle = styled.span`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 0.5em;
 
   @media (orientation: portrait) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
@@ -50,7 +50,7 @@ const ExpHeaderPeriod = styled.span`
   font-size: 14px;
 
   @media (orientation: portrait) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 
@@ -64,13 +64,22 @@ const ExpBody = styled.div`
 `;
 
 const ExpBodyText = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   align-self: center;
+  color: ${white_800};
+
+  @media (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 
 const ExpBodyTitle = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
+
+  @media (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 
 const Highlight = styled.div`
